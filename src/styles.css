@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+  box-sizing: border-box;
+}
+
+:root{
+  --Size1:2.5rem;
+
+}
+.Main{
+
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+
+
+  /* background-color: gray; */
+}
+
+.Left{
+  width: 70%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.level{
+  position:absolute;
+  top: 20px;
+  left: 40px;
+  font-size: var(--Size1);
+}
+.activites{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  width: 100%;
+}
+.arb::placeholder{
+  direction: rtl ;
+  text-align: right ;
+}
+input::placeholder{
+  color: brown;
+}
+input ,.btn{
+  border-radius: 30px;
+  border: none;
+  background-color: green;
+  padding: 2vb;
+  width:40%;
+  font-size: var(--Size1);
+}
+.reviw{
+  display: none;
+
+}
+
+
+
+
+.Right{
+  background-color: green;
+  width: 30%;
+  height: 100%;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+
+}
+.stats{
+  width: 100%;
+  height:70%;
+  background-color: aqua;
+  border-top-left-radius: 40px;
+  padding-top: 0vh;
+overflow: hidden;
+
+
+}
+.stat_here{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  /* direction: rtl; */
+  padding:5vb;
+
+}
+header{
+  background-color: blueviolet;
+  width: 100%;
+  padding: 2vb;
+  height: 8vh;
+  border-bottom-left-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.right_bottom{
+  width: 100%;
+  height:30%;
+  background-color: gray;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+hr{
+  width: 100%;
+}
+.right_bottom span{
+  font-size: 50px;
+}
