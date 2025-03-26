@@ -1,0 +1,35 @@
+{
+    "words":[
+        {
+            "id":1,
+            "Reviewed":false,
+            "mistakes":false,
+            "Arabic":"Arabic",
+            "English":"English"
+        }
+    ],
+    "NewWords":[
+        {
+            "id":1,
+            "Reviewed":false,
+            "mistakes":false,
+            "Arabic":"Arabic",
+            "English":"English"
+        }
+    ]
+
+    ,
+    "Statistics":[
+        {
+            "id":1,
+            "Level":0,
+            "Mistakes":0,
+            "Reviewed":0,
+            "Tests":0,
+            "TotalWords":0,
+            "Weekly":0,
+            "Diligence":0,
+            "Memory":0
+        }
+    ]
+}
