@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, NavLink, Route } from 'react-router-dom';
 import './App.css';
 import './styles.css';
-// import Review from './componant/Review';
 import New from './componant/New';
 import Review from './componant/review';
 import Test from './componant/Test';
@@ -10,14 +9,14 @@ import SolarSystem from './componant/SolarSystem';
 
 const Main = () => {
   return (
-    <Router> {/* 🟢 يجب أن يكون Router أعلى الهيكل كله */}
+    <Router> 
       <div className='Main'>
         <div className='Left'>
           <span className='level'>Level : 10</span>
           <div className='activites'>
             <div className='reviw_pather'>
               <Routes>
-              <Route path="/" element={<SolarSystem />} />
+              <Route index element={ <SolarSystem width="100%" height="100%" />} />
                 <Route path="/new" element={<New />} />
                 <Route path="/review" element={<Review />} />
                 <Route path="/test" element={<Test />} />

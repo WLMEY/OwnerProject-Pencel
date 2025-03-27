@@ -263,3 +263,52 @@ li {
   background-color: var(--list-bg);
   color: var(--list-text);
 }
+
+
+
+
+
+
+/* /////////////////// */
+.solar-container {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.solar-container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.solar-description {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.solar-facts {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.solar-facts h3 {
+  margin-top: 0;
+  color: #444;
+}
+
+.solar-facts ul {
+  padding-left: 20px;
+}
+
+.solar-facts li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+
