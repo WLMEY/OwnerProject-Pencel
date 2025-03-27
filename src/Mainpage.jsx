@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, NavLink, Route } from 'react-router-dom';
 import './App.css';
 import './styles.css';
@@ -6,13 +6,34 @@ import New from './componant/New';
 import Review from './componant/review';
 import Test from './componant/Test';
 import SolarSystem from './componant/SolarSystem';
+import Statisitics from './componant/Statistics';
+import axios from 'axios';
 
 const Main = () => {
+
+
+
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+      const GetData = async () => {
+
+          const response = await axios.get("http://localhost:5000/Statistics");
+          setData(response.data);
+      };
+
+      GetData();
+  }, [data]);
+
+
+
+
+
   return (
     <Router> 
       <div className='Main'>
         <div className='Left'>
-          <span className='level'>Level : 10</span>
+          <span className='level'>Level : {data?.Level ?? "Loading..."}</span>
           <div className='activites'>
             <div className='reviw_pather'>
               <Routes>
@@ -35,19 +56,13 @@ const Main = () => {
               <NavLink to="/states">States</NavLink>
             </header>
             <div className='stat_here'>
-              <ul>
-                <li><span>Total Words</span><span>15575</span></li>
-                <li><span>New Words "Weekly"</span><span>26</span></li>
-                <li><span>Tests</span><span>5</span></li>
-                <li><span>Reviewed</span><span>1200</span></li>
-                <li><span>Mistakes</span><span>145</span></li>
-              </ul>
+                <Statisitics/>
             </div>
           </div>
           <div className='right_bottom'>
-            <span>Diligence : 135%</span>
+            <span>Diligence : {data?.Diligence ??"Loading..."}%</span>
             <hr />
-            <span>Memory : 68%</span>
+            <span>Memory : {data?.Memory ??"Loading..."}%</span>
           </div>
         </div>
       </div>
