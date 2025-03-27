@@ -53,7 +53,7 @@
   width: 100%;
 }
 .reviw_pather{
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -138,7 +138,13 @@ li{
 }
 
 
-
+.Q_ditils{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 39%;
+}
 .Right{
   /* background-color: green; */
   width: 30%;
@@ -156,6 +162,10 @@ li{
 overflow: hidden;
 border-bottom-left-radius: 20px;
 
+}
+.stats a{
+  color: black;
+  text-decoration: none;
 }
 
 .stat_here{

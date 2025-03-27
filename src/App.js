@@ -1,90 +1,27 @@
 import { useState } from 'react';
 import './App.css';
 import './styles.css'
+import Review from './componant/review';
+import New from './componant/New';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import Main from './Mainpage';
 
 function App() {
 
 
   return (
-    <div className='Main'>
-      <div className='Left'>
-        <span className='level'>Level : 10</span>
-        <div className='activites'>
-          <div className='new'>
-            <input type='text' id='arabicInput' dir="rtl" lang="ar" inputMode="none" placeholder='عربي'></input>
-            <input type='text' id='englishInput' dir="ltr" lang="en" inputMode="latin" placeholder='English'></input>
-            <button className='btn'>save</button>
-          </div>
-          <div className='reviw_pather'>
-            <div className='reviw'>
-              <div className='viewleft'>
-                <ul>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
+    // <BrowserRouter>
+    //     <Routes>
+    //       <Route path='/' element={<Main/>}/>
+    //       {/* <Route path='/New' element={<New/>}/>
+    //       <Route path='/Review' element={<Review/>}/> */}
 
-
-                </ul>
-              </div>
-              <div className='HR'>
-
-              </div>
-              <div className='viewright'>
-                <ul>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-                  <li><span>English</span>  <span>عربي</span> </li>
-
-                </ul>
-              </div>
-            </div>
-            <button className='btn2'>done</button>
-          </div>
-        </div>
-      </div>
-      <div className='Right'>
-        <div className='stats'>
-          <header >
-            <span>New</span>
-            <span>revwe</span>
-            <span>states</span>
-
-          </header>
-          <div className='stat_here' >
-            <ul>
-              <li><span>Total Words</span><span>15575</span></li>
-              <li><span>New Words "Weekly"</span><span>26</span></li>
-              <li><span>Tests</span><span>5</span></li>
-              <li><span>Reviewed</span><span>1200</span></li>
-              <li><span>Mistakes</span><span>145</span></li>
-
-
-            </ul>
-          </div>
-
-        </div>
-        <div className='right_bottom'>
-          <span>Diligence : 135%</span>
-          <hr></hr>
-          <span>Memory : 68%</span>
-
-        </div>
-      </div>
-    </div>
+    //     </Routes>
+    // </BrowserRouter>
+    <>
+    <Main/>
+    
+    </>
   );
 }
 
@@ -107,7 +44,6 @@ export default App;
 // import { useState, useRef, useEffect } from 'react';
 // import './App.css';
 // import './styles.css';
-
 // function App() {
 //   const [arabicText, setArabicText] = useState('');
 //   const [englishText, setEnglishText] = useState('');
