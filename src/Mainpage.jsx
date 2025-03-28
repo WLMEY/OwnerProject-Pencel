@@ -20,7 +20,7 @@ const Main = () => {
 
       const GetData = async () => {
 
-          const response = await axios.get("http://localhost:5000/Statistics");
+          const response = await axios.get("http://localhost:5000/Statistics/1");
           setData(response.data);
       };
 
@@ -32,7 +32,8 @@ const Main = () => {
 
 
   return (
-    <Router> <Algorithms/>
+    <Router>
+       <Algorithms/>
       <div className='Main'>
         <div className='Left'>
           <span className='level'>Level : {data?.Level ?? "Loading..."}</span>

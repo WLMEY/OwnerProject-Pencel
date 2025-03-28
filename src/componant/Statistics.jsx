@@ -7,7 +7,7 @@ const Statistics = () => {
     useEffect(() => {
         const GetData = async () => {
 
-            const response = await axios.get("http://localhost:5000/Statistics");
+            const response = await axios.get("http://localhost:5000/Statistics/1");
             setData(response.data);
         };
 

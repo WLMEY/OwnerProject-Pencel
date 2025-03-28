@@ -1,7 +1,7 @@
 {
   "words": [
     {
-      "id": 1,
+      "id": "1",
       "Reviewed": false,
       "mistakes": false,
       "Arabic": "Arabic",
@@ -13,26 +13,77 @@
       "mistakes": false,
       "Arabic": "سورسار 2",
       "English": "sorsar2"
+    },
+    {
+      "id": "5b64",
+      "Reviewed": false,
+      "mistakes": false,
+      "Arabic": "بطل",
+      "English": "hero"
+    },
+    {
+      "id": "0aab",
+      "Reviewed": false,
+      "mistakes": false,
+      "Arabic": "aldsfkj;",
+      "English": ";lakjsdf"
+    },
+    {
+      "id": "3c83",
+      "Reviewed": false,
+      "mistakes": false,
+      "Arabic": "lkakskldm",
+      "English": "'aklf;ds"
+    },
+    {
+      "id": "09c0",
+      "Reviewed": false,
+      "mistakes": false,
+      "Arabic": "12",
+      "English": "22"
     }
   ],
   "NewWords": [
     {
-      "id": 1,
+      "id": "1",
       "Reviewed": false,
       "mistakes": false,
       "Arabic": "Arabic",
       "English": "English"
+    },
+    {
+      "id": "b22e",
+      "Reviewed": false,
+      "mistakes": false,
+      "Arabic": "aldsfkj;",
+      "English": ";lakjsdf"
+    },
+    {
+      "id": "1b9e",
+      "Reviewed": false,
+      "mistakes": false,
+      "Arabic": "lkakskldm",
+      "English": "'aklf;ds"
+    },
+    {
+      "id": "5064",
+      "Reviewed": false,
+      "mistakes": false,
+      "Arabic": "12",
+      "English": "22"
     }
   ],
-  "Statistics": {
-    "id": 1,
-    "Level": 10,
-    "Mistakes": 15,
-    "Reviewed": 20,
-    "Tests": 30,
-    "TotalWords": 40,
-    "Weekly": 50,
-    "Diligence": 60,
-    "Memory": 70
-  }
+  "Statistics": [
+    {
+      "id": "1",
+      "Level": 0,
+      "Mistakes": 0,
+      "Reviewed": 0,
+      "Tests": 0,
+      "TotalWords": 6,
+      "Weekly": 4,
+      "Diligence": 0,
+      "Memory": 0
+    }
+  ]
 }

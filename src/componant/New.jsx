@@ -68,20 +68,21 @@ const New = () => {
                 English: English.toLowerCase()
             };
 
-            console.log(Arabic , typeof(Arabic), Arabic.length)
-            console.log(English , typeof(English), English.length)
+            console.log(Arabic, typeof (Arabic), Arabic.length)
+            console.log(English, typeof (English), English.length)
 
             setNewObject(updatedObject);
-                if (Arabic != "" && English!=""){
-                    const response = await axios.post("http://localhost:5000/words", updatedObject);
-                    console.log("Response:", response.data);
-                    console.log("Sent successfully")
-                    setArabic('')
-                    setEnglish('')
-                }
-                else{
-                    console.log("Please fill out all first.")
-                }
+            if (Arabic != "" && English != "") {
+                await axios.post("http://localhost:5000/words", updatedObject);
+                await axios.post("http://localhost:5000/NewWords", updatedObject);
+
+                console.log("Sent successfully")
+                setArabic('')
+                setEnglish('')
+            }
+            else {
+                console.log("Please fill out all first.")
+            }
 
         } catch (error) {
             console.error("Error sending data:", error);
