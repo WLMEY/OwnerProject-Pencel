@@ -8,6 +8,7 @@ import Test from './componant/Test';
 import SolarSystem from './componant/SolarSystem';
 import Statisitics from './componant/Statistics';
 import axios from 'axios';
+import Algorithms from './componant/Algermes';
 
 const Main = () => {
 
@@ -16,6 +17,7 @@ const Main = () => {
   const [data, setData] = useState({});
 
   useEffect(() => {
+
       const GetData = async () => {
 
           const response = await axios.get("http://localhost:5000/Statistics");
@@ -30,12 +32,13 @@ const Main = () => {
 
 
   return (
-    <Router> 
+    <Router> <Algorithms/>
       <div className='Main'>
         <div className='Left'>
           <span className='level'>Level : {data?.Level ?? "Loading..."}</span>
           <div className='activites'>
             <div className='reviw_pather'>
+            
               <Routes>
               <Route index element={ <SolarSystem width="100%" height="100%" />} />
                 <Route path="/new" element={<New />} />
