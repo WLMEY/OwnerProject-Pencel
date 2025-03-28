@@ -232,6 +232,7 @@ hr{
   --header-bg: #282B30;
   --stats-bg: #99AAB5;
   --list-bg: #36393F;
+  --list-bg2: #ff3c0088;
   --list-text: #FFFFFF;
 }
 .Main {
@@ -259,10 +260,15 @@ header {
 .stats {
   background-color: var(--stats-bg);
 }
-li {
+li ,.false{
   background-color: var(--list-bg);
   color: var(--list-text);
 }
+.true{
+  background-color: var(--list-bg2);
+  color: var(--list-text);
+}
+
 
 
 
