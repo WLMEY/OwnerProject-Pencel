@@ -27,10 +27,6 @@ const Main = () => {
       GetData();
   }, [data]);
 
-
-
-
-
   return (
     <Router>
        <Algorithms/>
