@@ -35,7 +35,7 @@ const Review = () => {
     }
     // await axios.put("http://localhost:5000/Mistakes",{})
 
-    await axios.push("http://localhost:5000/Statistics/1",{Mistakes:+mistakes.length})
+    await axios.patch("http://localhost:5000/Statistics/1",{Mistakes:+mistakes.length})
   }
   const gotoMainpage=()=>{
     navigate('/');
