@@ -1,6 +1,8 @@
 
 import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
+
+export const Wordcontext=createContext(null);
 
 const Algorithms = () => {
     // Variablse
@@ -11,7 +13,7 @@ const Algorithms = () => {
     const [newWords, setNewWords] = useState([]);
     const [level,setLevel]=useState()
 
-    const levelcontext=useContext();
+    
 
 
     //Get all the Statistics
@@ -78,9 +80,122 @@ const Algorithms = () => {
         }
     }, [word_No_Total,word_No_Weekly]);
 
-    return <levelcontext.provider value={{level}}>
-    
-    </levelcontext.provider>;
+    return (
+    <Wordcontext.Provider value={{words}}>
+   <>
+   </>
+    </Wordcontext.Provider>
+    )
 };
 
 export default Algorithms;
+
+
+
+
+
+
+
+// import axios from 'axios';
+// import React, { createContext, useContext, useEffect, useState } from 'react';
+
+// // إنشاء السياق
+// const WordsContext = createContext();
+
+// const Algorithms = () => {
+//     // تعيين الحالة (State)
+//     const [statistics, setStatistics] = useState({});
+//     const [word_No_Total, setWord_No_Total] = useState(0);
+//     const [word_No_Weekly, setWord_No_Weekly] = useState(0);
+//     const [words, setWords] = useState([]);
+//     const [newWords, setNewWords] = useState([]);
+//     const [level, setLevel] = useState(0);
+
+//     // جلب الإحصائيات
+//     const Get_Statistics = async () => {
+//         try {
+//             const { data } = await axios.get("http://localhost:5000/Statistics");
+//             setStatistics(data);
+//         } catch (error) {
+//             console.error("خطأ في جلب الإحصائيات:", error);
+//         }
+//     };
+
+//     // جلب الكلمات
+//     const Get_Words = async () => {
+//         try {
+//             const { data } = await axios.get("http://localhost:5000/words");
+//             setWords(data);
+//         } catch (error) {
+//             console.error("خطأ في جلب الكلمات:", error);
+//         }
+//     };
+
+//     // جلب الكلمات الجديدة
+//     const Get_NewWords = async () => {
+//         try {
+//             const { data } = await axios.get("http://localhost:5000/NewWords");
+//             setNewWords(data);
+//         } catch (error) {
+//             console.error("خطأ في جلب الكلمات الجديدة:", error);
+//         }
+//     };
+
+//     // حساب المستوى
+//     useEffect(() => {
+//         if (word_No_Total > 0) {
+//             setLevel(Math.floor(word_No_Total / 25));
+//         }
+//     }, [word_No_Total]);
+
+//     // تحديث عدد الكلمات في الحالة (state)
+//     useEffect(() => {
+//         if (words.length > 0) {
+//             setWord_No_Total(words.length);
+//             setWord_No_Weekly(newWords.length);
+//         }
+//     }, [words, newWords]);
+
+//     // تحديث عدد الكلمات في السيرفر
+//     useEffect(() => {
+//         if (word_No_Total > 0 || word_No_Weekly > 0) {
+//             Patch_TotalWords();
+//         }
+//     }, [word_No_Total, word_No_Weekly]);
+
+//     // تحديث القيم في السيرفر
+//     const Patch_TotalWords = async () => {
+//         try {
+//             await axios.patch("http://localhost:5000/Statistics/1", { 
+//                 TotalWords: word_No_Total, 
+//                 Weekly: word_No_Weekly,
+//                 Level: level
+//             });
+
+//             setStatistics(prevState => ({
+//                 ...prevState,
+//                 TotalWords: word_No_Total,
+//                 Weekly: word_No_Weekly,
+//                 Level: level
+//             }));
+
+//         } catch (error) {
+//             console.error("خطأ في تحديث الإحصائيات:", error);
+//         }
+//     };
+
+//     // جلب البيانات عند تحميل المكون
+//     useEffect(() => {
+//         Get_Statistics();
+//         Get_Words();
+//         Get_NewWords();
+//     }, []);
+
+//     return (
+//         <WordsContext.Provider value={{ words }}>
+// <></>
+//         </WordsContext.Provider>
+//     );
+// };
+
+// export default Algorithms;
