@@ -358,6 +358,41 @@
       "mistakes": true,
       "Arabic": "765",
       "English": "3767"
+    },
+    {
+      "id": "0aab",
+      "Reviewed": false,
+      "mistakes": true,
+      "Arabic": "aldsfkj;",
+      "English": ";lakjsdf"
+    },
+    {
+      "id": "0aab",
+      "Reviewed": false,
+      "mistakes": true,
+      "Arabic": "aldsfkj;",
+      "English": ";lakjsdf"
+    },
+    {
+      "id": "0089",
+      "Reviewed": false,
+      "mistakes": true,
+      "Arabic": "155",
+      "English": "155"
+    },
+    {
+      "id": "fdb2",
+      "Reviewed": false,
+      "mistakes": true,
+      "Arabic": "435",
+      "English": "65"
+    },
+    {
+      "id": "f178",
+      "Reviewed": false,
+      "mistakes": true,
+      "Arabic": "765",
+      "English": "3767"
     }
   ],
   "NewWords": [
@@ -443,7 +478,7 @@
     {
       "id": "1",
       "Level": 0,
-      "Mistakes": 24,
+      "Mistakes": 29,
       "Reviewed": 0,
       "Tests": 0,
       "TotalWords": 13,

@@ -1,8 +1,9 @@
 
 import axios from 'axios';
-import React, { createContext, useEffect, useState } from 'react';
+import React, { Children, createContext, useEffect, useState } from 'react';
+import Test from './Test';
 
-export const Wordcontext=createContext(null);
+// export const Wordcontext = createContext();
 
 const Algorithms = () => {
     // Variablse
@@ -11,9 +12,9 @@ const Algorithms = () => {
     const [word_No_Weekly, setWord_No_Weekly] = useState(null);
     const [words, setWords] = useState([]);
     const [newWords, setNewWords] = useState([]);
-    const [level,setLevel]=useState()
+    const [level, setLevel] = useState()
 
-    
+
 
 
     //Get all the Statistics
@@ -27,30 +28,30 @@ const Algorithms = () => {
         const { data } = await axios.get("http://localhost:5000/words");
         setWords(data);
     };
-    const LevelCalculation=()=>{
-        const levelCalc=Math.floor(word_No_Total/25);
+    const LevelCalculation = () => {
+        const levelCalc = Math.floor(word_No_Total / 25);
         setLevel(levelCalc);
-    
+
 
     }
 
     //Get all the New Words
-    const Get_NewWords=async ()=>{
+    const Get_NewWords = async () => {
         const { data } = await axios.get("http://localhost:5000/NewWords");
         setNewWords(data);
-        
+
     }
     //Updata the TotalWords
     const Patch_TotalWords = async () => {
-        
-        setStatistics({...statistics,TotalWords: word_No_Total })
-        setStatistics({...statistics,Weekly: word_No_Weekly })
+
+        setStatistics({ ...statistics, TotalWords: word_No_Total })
+        setStatistics({ ...statistics, Weekly: word_No_Weekly })
 
         // console.log(statistics)
-        await axios.patch("http://localhost:5000/Statistics/1", { TotalWords: word_No_Total,Weekly: word_No_Weekly ,Level:level});
+        await axios.patch("http://localhost:5000/Statistics/1", { TotalWords: word_No_Total, Weekly: word_No_Weekly, Level: level });
         // await axios.patch("http://localhost:5000/Statistics/1", { Weekly: word_No_Weekly });
 
-        
+
     };
 
     // جلب البيانات عند تحميل المكون
@@ -73,19 +74,15 @@ const Algorithms = () => {
 
     // تحديث عدد الكلمات في السيرفر عندما يتغير `TotalWordNo`
     useEffect(() => {
-        if (word_No_Total !== null||word_No_Weekly !== null) {
-        
+        if (word_No_Total !== null || word_No_Weekly !== null) {
+
             Patch_TotalWords();
             console.log(statistics)
         }
-    }, [word_No_Total,word_No_Weekly]);
+    }, [word_No_Total, word_No_Weekly]);
 
-    return (
-    <Wordcontext.Provider value={{words}}>
-   <>
-   </>
-    </Wordcontext.Provider>
-    )
+
+
 };
 
 export default Algorithms;
@@ -166,8 +163,8 @@ export default Algorithms;
 //     // تحديث القيم في السيرفر
 //     const Patch_TotalWords = async () => {
 //         try {
-//             await axios.patch("http://localhost:5000/Statistics/1", { 
-//                 TotalWords: word_No_Total, 
+//             await axios.patch("http://localhost:5000/Statistics/1", {
+//                 TotalWords: word_No_Total,
 //                 Weekly: word_No_Weekly,
 //                 Level: level
 //             });
