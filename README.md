@@ -141,10 +141,20 @@ src/
 ## Screenshots
 
 <div align="center">
-    <img src="screenshots/add-word.png" width="300" alt="Add New Word">
-    <img src="screenshots/test-screen.png" width="300" alt="Test Screen">
-    <img src="screenshots/stats.png" width="300" alt="Statistics">
+    <h5>Home Page</h5>
+    <img src="src/image/main.png" width="300" alt="Home Screen">
+    <h5>Add New Words Page</h5>
+    <img src="src/image/new.png" width="300" alt="Add a New Word">
+    <h5>Review Words Page</h5>
+    <img src="src/image/Test.png" width="300" alt="Test Screen">
+    <h5>Last Test Review Page</h5>
+    <img src="src/image/Review.png" width="300" alt="Statistics">
+    <h5>Video</h5>
+    <video src="src/image/site.mp4" width="300" controls>
+        Your browser does not support video playback.
+    </video>
 </div>
+
 
 ## License
 
