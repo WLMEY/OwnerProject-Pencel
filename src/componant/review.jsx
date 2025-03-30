@@ -11,7 +11,8 @@ const Review = () => {
   const [left, setLeft] = useState([]);
   const [right, setRight] = useState([]);
   const [mistakes, setMistakes] = useState([]);
-  const [weekly, setWeekly] = useState();
+  const [weeklyList, setWeeklyList] = useState();
+  const [newDiligence,setNewDiligence]=useState([])
 
 
   const GetReview = async () => {
@@ -48,15 +49,57 @@ const Review = () => {
   };
 
   // const getDili_stat=async()=>{
-  //   const { data:W } = await axios.get("http://localhost:5000/Statistics/1");
-  //   setWeekly(D);
+  //   const { data } = await axios.get("http://localhost:5000/Diligence/");
+  //   setWeeklyList(data);
+  // }
+  // const getDiligence=async()=>{ //send
+  //    await axios.patch("http://localhost:5000/Statistics/1",{Diligence:newDiligence});
     
   // }
-  // const getDiligence=async()=>{
-  //   const { data:W } = await axios.get("http://localhost:5000/Diligence");
-  //   setWeekly(W);
-    
+  // const setNewDiligence_Calc=()=>{
+  //   setNewDiligence((weeklyList.reduce((acc,num)=>acc+num.lastDiligence,0))/weeklyList.length)
   // }
+
+
+
+
+  const getDili_stat = async () => {
+    const { data } = await axios.get("http://localhost:5000/Diligence/");
+    setWeeklyList(data);
+    return data; // مهم للانتظار في useEffect
+  };
+
+  const sendDiligenceToServer = async (value) => {
+    await axios.patch("http://localhost:5000/Statistics/1", { Diligence: value });
+  };
+
+  const calculateNewDiligence = () => {
+    const average = weeklyList.reduce((acc, num) => acc + num.lastDiligence, 0) / weeklyList.length;
+    setNewDiligence(average);
+    return average;
+  };
+
+  useEffect(() => {
+    const processDiligence = async () => {
+      try {
+        // 1. جلب البيانات أولاً
+        await getDili_stat();
+        
+        // 2. حساب المتوسط (بعد أن تكون weeklyList محدثة)
+        const avg = calculateNewDiligence();
+        
+        // 3. إرسال النتيجة إلى الخادم
+        await sendDiligenceToServer(avg);
+        
+      } catch (error) {
+        console.error("Error in diligence process:", error);
+      }
+    };
+
+    processDiligence();
+  }, []); // Empty dependency array = runs once on mount
+
+
 
 
 
@@ -70,7 +113,7 @@ const Review = () => {
   const gotoMainpage = () => {
     navigate('/');
     // if()
-    sendMastic();
+    // sendMastic();
   };
 
   useEffect(() => {

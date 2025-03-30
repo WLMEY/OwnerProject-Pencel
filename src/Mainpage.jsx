@@ -53,7 +53,7 @@ const Main = () => {
               <NavLink to="/new">New</NavLink>
               <NavLink to="/review">Review</NavLink>
               <NavLink to="/test">Test</NavLink>
-              <NavLink to="/states">States</NavLink>
+              <NavLink to="/">Main</NavLink>
             </header>
             <div className='stat_here'>
                 <Statisitics/>
