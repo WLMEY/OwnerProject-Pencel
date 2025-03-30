@@ -142,7 +142,7 @@ src/
 
 <div align="center">
     <h5>Home Page</h5>
-    <img src="src/image/main.png" width="300" alt="Home Screen">
+    <img src="src/image/main.png" width="1000" alt="Home Screen">
     <h5>Add New Words Page</h5>
     <img src="src/image/new.png" width="300" alt="Add a New Word">
     <h5>Review Words Page</h5>
