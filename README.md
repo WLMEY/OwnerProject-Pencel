@@ -231,9 +231,25 @@ src/
 ## لقطات من التطبيق
 
 <div align="center">
-    <img src="screenshots/add-word.png" width="300" alt="إضافة كلمة جديدة">
-    <img src="screenshots/test-screen.png" width="300" alt="شاشة الاختبار">
-    <img src="screenshots/stats.png" width="300" alt="الإحصائيات">
+<h5>الصفحه البدايه</h5>
+    <img src="src/image/main.png" width="300" alt="الشاشه البدايه">
+
+<h5>الصفحه اضافه الكلمات الجديده</h5>
+<img src="src/image/new.png" width="300" alt="إضافة كلمة جديدة">
+
+<h5>الصفحه مراجعه الكلمات</h5>
+    <img src="src/image/Test.png" width="300" alt="شاشة الاختبار">
+
+<h5>الصفحه مراجعه اخر اختبار </h5>
+    <img src="src/image/Review.png" width="300" alt="الإحصائيات">
+
+<h5> فديو </h5>
+<video src="src/image/الموقع.mp4" width="300" controls>
+    متصفحك لا يدعم تشغيل الفيديو.
+</video>
+
+    
+
 </div>
 
 ## الرخصة
