@@ -20,8 +20,8 @@ const Main = () => {
 
       const GetData = async () => {
 
-          const response = await axios.get("http://localhost:5000/Statistics/1");
-          setData(response.data);
+          const {data} = await axios.get("http://localhost:5000/Statistics/1");
+          setData(data);
       };
 
       GetData();

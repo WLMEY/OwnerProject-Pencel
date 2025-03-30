@@ -13,6 +13,8 @@ const Test = () => {
     const [ansEnglish, setAnsEnglish] = useState([]);
     const [newReviw, setNewReviw] = useState([]);
     const [statistics, setStatistics] = useState([]);
+    const [review, setReview] = useState()
+
 
     const [Q_No, setQ_No] = useState(0);
     const Question_No = 10;
@@ -25,10 +27,25 @@ const Test = () => {
         setQuestion(unReviewed.slice(0, Question_No));
     };
 
+    const setReviewed = async () => {
+        setReview(statistics.Reviewed + Question.length);
+    }
+    const sendReviewedStat = async () => {
+        console.log("send on click ")
+        await axios.patch("http://localhost:5000/Statistics/1", { Reviewed: review });
+
+    }
+    useEffect(() => {
+        setReviewed();
+    },[statistics])
+    // useEffect(() => {
+    //     sendReviewedStat();
+    // },[review])
+
     const Get_Words = async () => {
         try {
             const { data } = await axios.get("http://localhost:5000/words");
-            const { data:stat } = await axios.get("http://localhost:5000/Statistics/1");
+            const { data: stat } = await axios.get("http://localhost:5000/Statistics/1");
 
             setStatistics(stat);
             setWords(data);
@@ -64,13 +81,13 @@ const Test = () => {
 
     const sendNewReviw = async () => {
         try {
-            console.log("typeof : " +typeof(newReviw))
-            for(let i=0;i<newReviw.length;i++){
-                await axios.post("http://localhost:5000/LastTest",newReviw[i]);
+            console.log("typeof : " + typeof (newReviw))
+            for (let i = 0; i < newReviw.length; i++) {
+                await axios.post("http://localhost:5000/LastTest", newReviw[i]);
             }
-            
 
-            await axios.put("http://localhost:5000/Statistics/1",{...statistics,Tests:(statistics.Tests+1)})
+
+            await axios.put("http://localhost:5000/Statistics/1", { ...statistics, Tests: (statistics.Tests + 1) })
         } catch (error) {
             console.error("Error sending review data:", error);
         }
@@ -81,6 +98,8 @@ const Test = () => {
             setQ_No(Q_No + 1);
         } else {
             Correction();
+            
+            sendReviewedStat();
             goto();
             setQ_No(0);
         }

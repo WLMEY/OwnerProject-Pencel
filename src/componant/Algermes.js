@@ -17,6 +17,8 @@ const Algorithms = () => {
 
 
 
+
+
     //Get all the Statistics
     const Get_Statistics = async () => {
         const { data } = await axios.get("http://localhost:5000/Statistics");
@@ -29,11 +31,11 @@ const Algorithms = () => {
         setWords(data);
     };
     const LevelCalculation = () => {
-        const levelCalc = Math.floor(word_No_Total / 25);
-        setLevel(levelCalc);
-
-
+        // console.log("word_No_Total: M", word_No_Total); // 100
+         
+        setLevel(Math.floor(word_No_Total/25));
     }
+
 
     //Get all the New Words
     const Get_NewWords = async () => {
@@ -41,6 +43,7 @@ const Algorithms = () => {
         setNewWords(data);
 
     }
+    
     //Updata the TotalWords
     const Patch_TotalWords = async () => {
 
@@ -48,24 +51,36 @@ const Algorithms = () => {
         setStatistics({ ...statistics, Weekly: word_No_Weekly })
 
         // console.log(statistics)
-        await axios.patch("http://localhost:5000/Statistics/1", { TotalWords: word_No_Total, Weekly: word_No_Weekly, Level: level });
+        // console.log("word_No_Total:", word_No_Total);
+        // console.log(word_No_Total, word_No_Weekly, level);
+
+        await axios.patch("http://localhost:5000/Statistics/1", { TotalWords: word_No_Total, Weekly: word_No_Weekly});
         // await axios.patch("http://localhost:5000/Statistics/1", { Weekly: word_No_Weekly });
 
 
     };
+    const sendLevel= async()=>{
+        await axios.patch("http://localhost:5000/Statistics/1", {Level: level });
 
+    }
+
+    useEffect(()=>{
+        // console.log("Level: effect", level); // 100
+        sendLevel();
+
+    },[level])
     // جلب البيانات عند تحميل المكون
     useEffect(() => {
         Get_Statistics();
         Get_Words();
         Get_NewWords();
-        LevelCalculation();
+       
     }, []);
 
     // تحديث `TotalWordNo` عندما تتغير `Words`
     useEffect(() => {
         if (words.length > 0) {
-            console.log(JSON.stringify(words));
+            // console.log(JSON.stringify(words));
             setWord_No_Total(words.length);
             setWord_No_Weekly(newWords.length);
 
@@ -77,7 +92,8 @@ const Algorithms = () => {
         if (word_No_Total !== null || word_No_Weekly !== null) {
 
             Patch_TotalWords();
-            console.log(statistics)
+            LevelCalculation();
+            // console.log(statistics)
         }
     }, [word_No_Total, word_No_Weekly]);
 
@@ -91,108 +107,3 @@ export default Algorithms;
 
 
 
-
-
-// import axios from 'axios';
-// import React, { createContext, useContext, useEffect, useState } from 'react';
-
-// // إنشاء السياق
-// const WordsContext = createContext();
-
-// const Algorithms = () => {
-//     // تعيين الحالة (State)
-//     const [statistics, setStatistics] = useState({});
-//     const [word_No_Total, setWord_No_Total] = useState(0);
-//     const [word_No_Weekly, setWord_No_Weekly] = useState(0);
-//     const [words, setWords] = useState([]);
-//     const [newWords, setNewWords] = useState([]);
-//     const [level, setLevel] = useState(0);
-
-//     // جلب الإحصائيات
-//     const Get_Statistics = async () => {
-//         try {
-//             const { data } = await axios.get("http://localhost:5000/Statistics");
-//             setStatistics(data);
-//         } catch (error) {
-//             console.error("خطأ في جلب الإحصائيات:", error);
-//         }
-//     };
-
-//     // جلب الكلمات
-//     const Get_Words = async () => {
-//         try {
-//             const { data } = await axios.get("http://localhost:5000/words");
-//             setWords(data);
-//         } catch (error) {
-//             console.error("خطأ في جلب الكلمات:", error);
-//         }
-//     };
-
-//     // جلب الكلمات الجديدة
-//     const Get_NewWords = async () => {
-//         try {
-//             const { data } = await axios.get("http://localhost:5000/NewWords");
-//             setNewWords(data);
-//         } catch (error) {
-//             console.error("خطأ في جلب الكلمات الجديدة:", error);
-//         }
-//     };
-
-//     // حساب المستوى
-//     useEffect(() => {
-//         if (word_No_Total > 0) {
-//             setLevel(Math.floor(word_No_Total / 25));
-//         }
-//     }, [word_No_Total]);
-
-//     // تحديث عدد الكلمات في الحالة (state)
-//     useEffect(() => {
-//         if (words.length > 0) {
-//             setWord_No_Total(words.length);
-//             setWord_No_Weekly(newWords.length);
-//         }
-//     }, [words, newWords]);
-
-//     // تحديث عدد الكلمات في السيرفر
-//     useEffect(() => {
-//         if (word_No_Total > 0 || word_No_Weekly > 0) {
-//             Patch_TotalWords();
-//         }
-//     }, [word_No_Total, word_No_Weekly]);
-
-//     // تحديث القيم في السيرفر
-//     const Patch_TotalWords = async () => {
-//         try {
-//             await axios.patch("http://localhost:5000/Statistics/1", {
-//                 TotalWords: word_No_Total,
-//                 Weekly: word_No_Weekly,
-//                 Level: level
-//             });
-
-//             setStatistics(prevState => ({
-//                 ...prevState,
-//                 TotalWords: word_No_Total,
-//                 Weekly: word_No_Weekly,
-//                 Level: level
-//             }));
-
-//         } catch (error) {
-//             console.error("خطأ في تحديث الإحصائيات:", error);
-//         }
-//     };
-
-//     // جلب البيانات عند تحميل المكون
-//     useEffect(() => {
-//         Get_Statistics();
-//         Get_Words();
-//         Get_NewWords();
-//     }, []);
-
-//     return (
-//         <WordsContext.Provider value={{ words }}>
-// <></>
-//         </WordsContext.Provider>
-//     );
-// };
-
-// export default Algorithms;
