@@ -7302,6 +7302,251 @@
       "mistakes": true,
       "Arabic": "هاتف",
       "English": "Phone"
+    },
+    {
+      "id": "51",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "عسل",
+      "English": "Honey"
+    },
+    {
+      "id": "97",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "كركم",
+      "English": "Turmeric"
+    },
+    {
+      "id": "39",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "لحم",
+      "English": "Meat"
+    },
+    {
+      "id": "80",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "فول",
+      "English": "Bean"
+    },
+    {
+      "id": "33",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "شوكة",
+      "English": "Fork"
+    },
+    {
+      "id": "77",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "صنوبر",
+      "English": "Pine nut"
+    },
+    {
+      "id": "24",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "هاتف",
+      "English": "Phone"
+    },
+    {
+      "id": "51",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "عسل",
+      "English": "Honey"
+    },
+    {
+      "id": "39",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "لحم",
+      "English": "Meat"
+    },
+    {
+      "id": "33",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "شوكة",
+      "English": "Fork"
+    },
+    {
+      "id": "23",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ساعة",
+      "English": "Clock"
+    },
+    {
+      "id": "82",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "حمص",
+      "English": "Chickpea"
+    },
+    {
+      "id": "4",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "جبل",
+      "English": "Mountain"
+    },
+    {
+      "id": "76",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "بندق",
+      "English": "Hazelnut"
+    },
+    {
+      "id": "15",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "زهرة",
+      "English": "Flower"
+    },
+    {
+      "id": "23",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ساعة",
+      "English": "Clock"
+    },
+    {
+      "id": "82",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "حمص",
+      "English": "Chickpea"
+    },
+    {
+      "id": "4",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "جبل",
+      "English": "Mountain"
+    },
+    {
+      "id": "76",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "بندق",
+      "English": "Hazelnut"
+    },
+    {
+      "id": "15",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "زهرة",
+      "English": "Flower"
+    },
+    {
+      "id": "23",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ساعة",
+      "English": "Clock"
+    },
+    {
+      "id": "82",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "حمص",
+      "English": "Chickpea"
+    },
+    {
+      "id": "4",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "جبل",
+      "English": "Mountain"
+    },
+    {
+      "id": "76",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "بندق",
+      "English": "Hazelnut"
+    },
+    {
+      "id": "15",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "زهرة",
+      "English": "Flower"
+    },
+    {
+      "id": "23",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ساعة",
+      "English": "Clock"
+    },
+    {
+      "id": "82",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "حمص",
+      "English": "Chickpea"
+    },
+    {
+      "id": "4",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "جبل",
+      "English": "Mountain"
+    },
+    {
+      "id": "76",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "بندق",
+      "English": "Hazelnut"
+    },
+    {
+      "id": "15",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "زهرة",
+      "English": "Flower"
+    },
+    {
+      "id": "23",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ساعة",
+      "English": "Clock"
+    },
+    {
+      "id": "82",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "حمص",
+      "English": "Chickpea"
+    },
+    {
+      "id": "4",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "جبل",
+      "English": "Mountain"
+    },
+    {
+      "id": "76",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "بندق",
+      "English": "Hazelnut"
+    },
+    {
+      "id": "15",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "زهرة",
+      "English": "Flower"
     }
   ],
   "NewWords": [
@@ -7387,15 +7632,23 @@
     {
       "id": "1",
       "Level": 4,
-      "Mistakes": 743,
-      "Reviewed": 40,
-      "Tests": 38,
+      "Mistakes": 778,
+      "Reviewed": 50,
+      "Tests": 39,
       "TotalWords": 100,
       "Weekly": 11,
       "Diligence": 0,
       "Memory": 0
     }
   ],
+  "Diligence":[
+    {
+      "id":0,
+      "lastDiligence":0
+
+    }
+  ]
+  ,
   "LastTest": [
     {
       "id": "31",
@@ -9132,6 +9385,76 @@
       "mistakes": true,
       "Arabic": "شوكة",
       "English": "Fork"
+    },
+    {
+      "id": "23",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ساعة",
+      "English": "Clock"
+    },
+    {
+      "id": "5",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "وردة",
+      "English": "Rose"
+    },
+    {
+      "id": "82",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "حمص",
+      "English": "Chickpea"
+    },
+    {
+      "id": "4",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "جبل",
+      "English": "Mountain"
+    },
+    {
+      "id": "76",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "بندق",
+      "English": "Hazelnut"
+    },
+    {
+      "id": "40",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "سمك",
+      "English": "Fish"
+    },
+    {
+      "id": "15",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "زهرة",
+      "English": "Flower"
+    },
+    {
+      "id": "14",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "شجرة",
+      "English": "Tree"
+    },
+    {
+      "id": "42",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "بيض",
+      "English": "Egg"
+    },
+    {
+      "id": "39",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "لحم",
+      "English": "Meat"
     }
   ]
 }

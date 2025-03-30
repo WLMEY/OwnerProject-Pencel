@@ -11,12 +11,14 @@ const Review = () => {
   const [left, setLeft] = useState([]);
   const [right, setRight] = useState([]);
   const [mistakes, setMistakes] = useState([]);
+  const [weekly, setWeekly] = useState();
+
 
   const GetReview = async () => {
     try {
       const { data } = await axios.get("http://localhost:5000/LastTest");
       if (Array.isArray(data)) {
-        setLastReview(data);
+        setLastReview(data.slice(-10));
       } else {
         console.error("البيانات المستلمة ليست مصفوفة:", data);
       }
@@ -44,6 +46,26 @@ const Review = () => {
       console.error("خطأ في تحديث الأخطاء:", error);
     }
   };
+
+  // const getDili_stat=async()=>{
+  //   const { data:W } = await axios.get("http://localhost:5000/Statistics/1");
+  //   setWeekly(D);
+    
+  // }
+  // const getDiligence=async()=>{
+  //   const { data:W } = await axios.get("http://localhost:5000/Diligence");
+  //   setWeekly(W);
+    
+  // }
+
+
+
+
+
+
+
+
+
 
   const gotoMainpage = () => {
     navigate('/');
