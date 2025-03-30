@@ -144,13 +144,13 @@ src/
     <h5>Home Page</h5>
     <img src="src/image/main.png" width="1000" alt="Home Screen">
     <h5>Add New Words Page</h5>
-    <img src="src/image/new.png" width="300" alt="Add a New Word">
+    <img src="src/image/new.png" width="1000" alt="Add a New Word">
     <h5>Review Words Page</h5>
-    <img src="src/image/Test.png" width="300" alt="Test Screen">
+    <img src="src/image/Test.png" width="1000" alt="Test Screen">
     <h5>Last Test Review Page</h5>
-    <img src="src/image/Review.png" width="300" alt="Statistics">
+    <img src="src/image/Review.png" width="1000" alt="Statistics">
     <h5>Video</h5>
-    <video src="src/image/site.mp4" width="300" controls>
+    <video src="src/image/site.mp4" width="1000" controls>
         Your browser does not support video playback.
     </video>
 </div>
@@ -242,19 +242,19 @@ src/
 
 <div align="center">
 <h5>الصفحه البدايه</h5>
-    <img src="src/image/main.png" width="300" alt="الشاشه البدايه">
+    <img src="src/image/main.png" width="1000" alt="الشاشه البدايه">
 
 <h5>الصفحه اضافه الكلمات الجديده</h5>
-<img src="src/image/new.png" width="300" alt="إضافة كلمة جديدة">
+<img src="src/image/new.png" width="1000" alt="إضافة كلمة جديدة">
 
 <h5>الصفحه مراجعه الكلمات</h5>
-    <img src="src/image/Test.png" width="300" alt="شاشة الاختبار">
+    <img src="src/image/Test.png" width="1000" alt="شاشة الاختبار">
 
 <h5>الصفحه مراجعه اخر اختبار </h5>
-    <img src="src/image/Review.png" width="300" alt="الإحصائيات">
+    <img src="src/image/Review.png" width="1000" alt="الإحصائيات">
 
 <h5> فديو </h5>
-<video src="src/image/الموقع.mp4" width="300" controls>
+<video src="src/image/الموقع.mp4" width="1000" controls>
     متصفحك لا يدعم تشغيل الفيديو.
 </video>
 
