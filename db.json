@@ -729,13 +729,13 @@
     {
       "id": "1",
       "Level": 4,
-      "Mistakes": 17,
-      "Reviewed": 30,
-      "Tests": 3,
+      "Mistakes": 22,
+      "Reviewed": 40,
+      "Tests": 4,
       "TotalWords": 102,
       "Weekly": 1,
       "Diligence": 0,
-      "Memory": 43
+      "Memory": 45
     }
   ],
   "Diligence": [],
@@ -949,6 +949,76 @@
       "mistakes": true,
       "Arabic": "كوب",
       "English": "Cup"
+    },
+    {
+      "id": "92",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ريحان",
+      "English": "Basil"
+    },
+    {
+      "id": "37",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "حليب",
+      "English": "Milk"
+    },
+    {
+      "id": "27",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ورقة",
+      "English": "Paper"
+    },
+    {
+      "id": "20",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "سرير",
+      "English": "Bed"
+    },
+    {
+      "id": "6",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "سيارة",
+      "English": "Car"
+    },
+    {
+      "id": "33",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "شوكة",
+      "English": "Fork"
+    },
+    {
+      "id": "8",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "قمر",
+      "English": "Moon"
+    },
+    {
+      "id": "51",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "عسل",
+      "English": "Honey"
+    },
+    {
+      "id": "25",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "حاسوب",
+      "English": "Computer"
+    },
+    {
+      "id": "3",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "بحر",
+      "English": "Sea"
     }
   ]
 }

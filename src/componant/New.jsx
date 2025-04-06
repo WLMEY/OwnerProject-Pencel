@@ -97,6 +97,7 @@ const New = () => {
         <>
             <div className="new">
                 <input
+                    className="boxshadow"
                     value={Arabic}
                     onChange={(e) => setArabic(e.target.value)}
                     type="text"
@@ -106,6 +107,7 @@ const New = () => {
                     placeholder="عربي"
                 />
                 <input
+                    className="boxshadow"
                     value={English}
                     onChange={(e) => setEnglish(e.target.value)}
                     type="text"
@@ -114,7 +116,7 @@ const New = () => {
                     lang="en"
                     placeholder="English"
                 />
-                <button onClick={handleSubmit} className="btn">
+                <button onClick={handleSubmit} className="btn boxshadow">
                     Save
                 </button>
             </div>

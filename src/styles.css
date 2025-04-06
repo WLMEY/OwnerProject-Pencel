@@ -49,7 +49,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2vh;
+  gap: 5vh;
   width: 100%;
 }
 .reviw_pather{
@@ -79,6 +79,7 @@ input ,.btn{
   padding: 2vb;
   width:40%;
   font-size: var(--Size1);
+
 }
 .btn{
   cursor: pointer;
@@ -218,6 +219,23 @@ hr{
 }
 
 
+.boxshadow{
+  box-shadow: -10px -7px 25px 3px #3C3F44, 10px 10px 25px 7px #1C1E20;
+  background-color: #2C2F33;
+  border: none;
+  text-align: center;
+}
+.boxshadow:focus{
+  outline: none;
+}
+
+
+
+
+
+
+
+
 /* colors  */
 
 :root {
@@ -245,10 +263,16 @@ hr{
   background-color: var(--bg-left);
 }
 .btn, .btn2 {
-  background-color: var(--btn-bg);
+  /* background-color: var(--btn-bg); */
+  transition: all 1s;
+
 }
 .btn:hover, .btn2:hover {
-  background-color: var(--btn-hover);
+  /* background-color: var(--btn-hover); */
+  box-shadow: none;
+  box-shadow: -5px -3px 14px 1px #3C3F44, 5px 5px 15px 3px #1C1E20;
+
+  transition: all 1s;
 }
 input {
   background-color: var(--input-bg);

@@ -544,6 +544,14 @@ const Test = () => {
                 <>
                     <h1>{Question[Q_No]?.Arabic}</h1>
                     <input
+                        onKeyDown={
+                            (e)=>{
+                                if (e.key==="Enter"){
+                                    handleCheck();
+                                }
+                            }
+                        }
+                        className='boxshadow'
                         value={ansEnglish[Q_No] || ""}
                         onChange={(e) => {
                             const newAnswers = [...ansEnglish];
@@ -558,8 +566,9 @@ const Test = () => {
                         placeholder='English'
                     />
                     <button 
+                        
                         onClick={handleCheck} 
-                        className='btn'
+                        className='btn boxshadow'
                         disabled={isLoading}
                     >
                         {Q_No < Question.length - 1 ? "Next" : "Submit & Review"}
