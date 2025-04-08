@@ -540,13 +540,15 @@ const Test = () => {
                 <span>Type English</span>
             </div>
 
+
+
             {Question.length > 0 && (
                 <>
                     <h1>{Question[Q_No]?.Arabic}</h1>
                     <input
                         onKeyDown={
                             (e)=>{
-                                if (e.key==="Enter"){
+                                if (e .key==="Enter"){
                                     handleCheck();
                                 }
                             }

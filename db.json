@@ -729,13 +729,13 @@
     {
       "id": "1",
       "Level": 4,
-      "Mistakes": 22,
-      "Reviewed": 40,
-      "Tests": 4,
+      "Mistakes": 23,
+      "Reviewed": 50,
+      "Tests": 5,
       "TotalWords": 102,
       "Weekly": 1,
       "Diligence": 0,
-      "Memory": 45
+      "Memory": 54
     }
   ],
   "Diligence": [],
@@ -1019,6 +1019,76 @@
       "mistakes": false,
       "Arabic": "بحر",
       "English": "Sea"
+    },
+    {
+      "id": "49",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "قهوة",
+      "English": "Coffee"
+    },
+    {
+      "id": "47",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "ملح",
+      "English": "Salt"
+    },
+    {
+      "id": "1",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "كتاب",
+      "English": "Book"
+    },
+    {
+      "id": "2",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "شمس",
+      "English": "Sun"
+    },
+    {
+      "id": "50",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "شاي",
+      "English": "Tea"
+    },
+    {
+      "id": "31",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "سكين",
+      "English": "Knife"
+    },
+    {
+      "id": "3",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "بحر",
+      "English": "Sea"
+    },
+    {
+      "id": "62",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "مانجو",
+      "English": "Mango"
+    },
+    {
+      "id": "20",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "سرير",
+      "English": "Bed"
+    },
+    {
+      "id": "59",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "تفاح",
+      "English": "Apple"
     }
   ]
 }
