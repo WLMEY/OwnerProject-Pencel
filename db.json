@@ -729,13 +729,13 @@
     {
       "id": "1",
       "Level": 4,
-      "Mistakes": 23,
-      "Reviewed": 50,
-      "Tests": 5,
+      "Mistakes": 32,
+      "Reviewed": 60,
+      "Tests": 6,
       "TotalWords": 102,
       "Weekly": 1,
       "Diligence": 0,
-      "Memory": 54
+      "Memory": 47
     }
   ],
   "Diligence": [],
@@ -1089,6 +1089,76 @@
       "mistakes": false,
       "Arabic": "تفاح",
       "English": "Apple"
+    },
+    {
+      "id": "1",
+      "Reviewed": true,
+      "mistakes": false,
+      "Arabic": "كتاب",
+      "English": "Book"
+    },
+    {
+      "id": "10",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "كلب",
+      "English": "Dog"
+    },
+    {
+      "id": "44",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "فاكهة",
+      "English": "Fruit"
+    },
+    {
+      "id": "23",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ساعة",
+      "English": "Clock"
+    },
+    {
+      "id": "33",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "شوكة",
+      "English": "Fork"
+    },
+    {
+      "id": "47",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "ملح",
+      "English": "Salt"
+    },
+    {
+      "id": "17",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "نجمة",
+      "English": "Star"
+    },
+    {
+      "id": "11",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "قط",
+      "English": "Cat"
+    },
+    {
+      "id": "25",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "حاسوب",
+      "English": "Computer"
+    },
+    {
+      "id": "7",
+      "Reviewed": true,
+      "mistakes": true,
+      "Arabic": "منزل",
+      "English": "House"
     }
   ]
 }
