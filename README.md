@@ -166,7 +166,7 @@ Contributions are welcome! Feel free to open an Issue or Pull Request for improv
 
 ## Contact
 
-your-email@example.com
+mmm.1919750@gmail.com
 
     # البدء مع تطبيق تعلم المفردات
 
@@ -274,5 +274,5 @@ src/
 
 ## التواصل
 
-your-email@example.com
+mmm.1919750@gmail.com
 
