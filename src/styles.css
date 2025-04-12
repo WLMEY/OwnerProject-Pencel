@@ -158,10 +158,11 @@ li{
   width: 100%;
   height:70%;
   /* background-color: aqua; */
-  border-top-left-radius: 40px;
+  /* border-top-left-radius: 40px; */
   padding-top: 0vh;
 overflow: hidden;
-border-bottom-left-radius: 20px;
+/* border-bottom-left-radius: 20px; */
+/* background-color: var(--input-bg); */
 
 }
 .stats a{
@@ -190,19 +191,22 @@ header{
   padding: 2vb;
   height: 8vh;
   font-size:1.5rem;
-  border-bottom-left-radius: 40px;
+  /* border-bottom-left-radius: 40px; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+header .pages{
+  color: var(--text-main);
 }
 
 .right_bottom{
   width: 100%;
   height:30%;
   background-color: var(--input-bg);
-  border-top-left-radius: 150px;
-  border-bottom-right-radius: 150px;
+  /* border-top-left-radius: 150px; */
+  /* border-bottom-right-radius: 150px; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -255,6 +259,7 @@ hr{
 }
 .Main {
   background-color: var(--bg-left);
+  color: var(--text-main);
 }
 .Left {
   background-color: var(--bg-left);
@@ -265,6 +270,8 @@ hr{
 .btn, .btn2 {
   /* background-color: var(--btn-bg); */
   transition: all 1s;
+  color: var(--text-main);
+
 
 }
 .btn:hover, .btn2:hover {
@@ -277,12 +284,16 @@ hr{
 input {
   background-color: var(--input-bg);
   border: 1px solid var(--input-border);
+  color: var(--text-main);
+
 }
 header {
   background-color: var(--header-bg);
+  
 }
 .stats {
   background-color: var(--stats-bg);
+  background-color: var(--input-bg);
 }
 li ,.false{
   background-color: var(--list-bg);

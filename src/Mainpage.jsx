@@ -50,18 +50,18 @@ const Main = () => {
         <div className='Right'>
           <div className='stats'>
             <header>
-              <NavLink to="/new">New</NavLink>
-              <NavLink to="/review">Review</NavLink>
-              <NavLink to="/test">Test</NavLink>
-              <NavLink to="/">Main</NavLink>
+              <NavLink className={"pages"} to="/new">New</NavLink>
+              <NavLink className={"pages"}to="/review">Review</NavLink>
+              <NavLink className={"pages"} to="/test">Test</NavLink>
+              <NavLink className={"pages"} to="/">Main</NavLink>
             </header>
             <div className='stat_here'>
                 <Statisitics/>
             </div>
           </div>
           <div className='right_bottom'>
-            <span>Diligence : {data?.Diligence ??"Loading..."}%</span>
-            <hr />
+            {/* <span>Diligence : {data?.Diligence ??"Loading..."}%</span> */}
+            {/* <hr /> */}
             <span>Memory : {data?.Memory ??"Loading..."}%</span>
           </div>
         </div>
