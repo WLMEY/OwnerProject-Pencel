@@ -9,6 +9,7 @@ import SolarSystem from './componant/SolarSystem';
 import Statisitics from './componant/Statistics';
 import axios from 'axios';
 import Algorithms from './componant/Algermes';
+import Login from './login';
 
 const Main = () => {
 
@@ -29,9 +30,10 @@ const Main = () => {
 
   return (
     <Router>
+      
        <Algorithms/>
       <div className='Main'>
-        <div className='Left'>
+        {/* <div className='Left'>
           <span className='level'>Level : {data?.Level ?? "Loading..."}</span>
           <div className='activites'>
             <div className='reviw_pather'>
@@ -59,12 +61,14 @@ const Main = () => {
                 <Statisitics/>
             </div>
           </div>
-          <div className='right_bottom'>
+          <div className='right_bottom'> */}
             {/* <span>Diligence : {data?.Diligence ??"Loading..."}%</span> */}
             {/* <hr /> */}
-            <span>Memory : {data?.Memory ??"Loading..."}%</span>
+            {/* <span>Memory : {data?.Memory ??"Loading..."}%</span>
           </div>
-        </div>
+        </div> */}
+      <Login/>
+
       </div>
     </Router>
   );

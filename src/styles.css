@@ -234,12 +234,77 @@ hr{
 }
 
 
+.continer{
+  background-color:#555;
+}
+.continer1{
+  background-color:#333;
+
+}
+
+/*////////////log////////////////////// */
+ .log{
+  width: 100%;
+  height: 100vh;
+ } 
+.Logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 5vb;
+}
+.main{
+  width: 100%;
+  height: 90%;  /* Erorr here man  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4vb;
+  background-color:#444;
+  padding: 10vb;
+
+
+}
+.Animation{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.typing{
+  letter-spacing: 0.1em;
+}
+.cursor{
+  display: inline-block;
+  margin-left: 2px;
+  color: white;
+  animation: blink 0.6s step-end infinite;
+
+}
+@keyframes blink {
+  50%{
+    opacity: 0;
+  }
+}
+.account{
+  width: 100%;
+  height: 100%;
+  padding: 5vb;
+}
+.Login{
+  width: 100%;
+  height: 100%;
+
+}
 
 
 
 
 
-
+/*///////////////////////////////////////  */
 /* colors  */
 
 :root {
