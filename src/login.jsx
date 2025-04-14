@@ -33,7 +33,7 @@ function TypingText({ text, delay = 100, pause = 2000 }) {
 const Login = () => {
   return (
     <div className="log">
-      <header className="header continer">
+      <header className="header">
         <div>
           <img className="logo" src="../2logo.png" alt="Logo" />
         </div>
