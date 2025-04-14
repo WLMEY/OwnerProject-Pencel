@@ -98,6 +98,8 @@
 
 
 
+
+
 import React, { useState, useEffect } from 'react';
 
 function TypingText({ text, delay = 100, pause = 2000 }) {
