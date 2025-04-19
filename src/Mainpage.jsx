@@ -43,8 +43,6 @@ const Main = () => {
                 <Route path="/new" element={<New />} />
                 <Route path="/review" element={<Review />} />
                 <Route path="/test" element={<Test />} />
-
-                
               </Routes>
             </div>
           </div>
@@ -68,6 +66,9 @@ const Main = () => {
           </div>
         </div> */}
       <Login/>
+
+
+      
 
       </div>
     </Router>
